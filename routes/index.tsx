@@ -1,5 +1,5 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { getPost, getPosts, Post } from "@/utils/posts.ts";
+import { getPost as _getPost, getPosts, Post } from "@/utils/posts.ts";
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
@@ -14,7 +14,7 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
     <main class="max-w-screen-md px-4 pt-16 mx-auto">
       <h1 class="text-5xl font-bold">Blog</h1>
       <div class="mt-8">
-        {posts.map((post) => <PostCard post={post} />)}
+        {posts.map((post) => <PostCard key={post.slug} post={post} />)}
       </div>
     </main>
   );
@@ -29,7 +29,7 @@ function PostCard(props: { post: Post }) {
           {post.title}
         </h3>
         <time class="text-gray-500">
-          {new Date(post.publishedAt).toLocaleDateString("en-us", {
+          {new Date(post.publishedAt).toLocaleDateString("tr-TR", {
             year: "numeric",
             month: "long",
             day: "numeric",

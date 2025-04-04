@@ -27,7 +27,7 @@ export async function getPosts(): Promise<Post[]> {
 // Get post.
 export async function getPost(slug: string): Promise<Post | null> {
   const text = await Deno.readTextFile(join(DIRECTORY, `${slug}.md`));
-  const { attrs, body } = extract(text);
+  const { attrs, body } = extract(text) as { attrs: { title: string; published_at: string; snippet: string }, body: string };
   return {
     slug,
     title: attrs.title,
