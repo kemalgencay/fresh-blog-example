@@ -11,5 +11,3 @@ Hello, world!
 ## This is h2
 
 ### Underline
-
-### Bold
