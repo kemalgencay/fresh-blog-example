@@ -1,0 +1,14 @@
+{
+  "build_id": "c876182e98c656152f3e5c5afce7e152b478301b",
+  "files": {
+    "main.js": [
+      "chunk-ODHLMUPB.js"
+    ],
+    "deserializer.js": [],
+    "signals.js": [
+      "chunk-ODHLMUPB.js"
+    ],
+    "chunk-ODHLMUPB.js": [],
+    "metafile.json": []
+  }
+}
