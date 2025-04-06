@@ -29,7 +29,7 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "kemalesatge-fresh-blog-97"
+          project: "kemalesatge-fresh-blog-22"
           entrypoint: "main.ts"
           root: "."
           
