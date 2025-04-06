@@ -1,6 +1,6 @@
 ---
 title: Dünya hali
-published_at: 2022-12-04T15:00:00.000Z
+published_at: 2025-04-07T15:00:00.000Z
 snippet: Değerli okurlar, "bakış açısı herşeydir" diyebilir miyiz? Bazı olayları düşünelim.
 ---
 DÜNYA HALİ
